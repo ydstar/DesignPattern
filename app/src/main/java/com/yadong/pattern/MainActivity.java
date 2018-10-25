@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.yadong.pattern.builder.Person;
+import com.yadong.pattern.factory.SendFactory;
+import com.yadong.pattern.factory.Sender;
 import com.yadong.pattern.observer.GirlFriendObserver;
 import com.yadong.pattern.observer.MessageObservable;
 import com.yadong.pattern.observer.Observer;
@@ -17,8 +19,7 @@ import com.yadong.pattern.strategy.duck.GreenHeadDuck;
 
 /**
  * 设计模式大全
- *1.变化部分,不变化部分,提取变化部分,抽象成接口+实现
- *
+ * 1.变化部分,不变化部分,提取变化部分,抽象成接口+实现
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
      * 分别封装行为接口,实现算法族,父类中放行为接口对象,在子类里具体设定行为对象
      * 原则:分离变化部分,封装接口,基于接口编程各种功能.
      * 此模式让行为算法的变化独立于算法的使用者
-     *
+     * <p>
      * 鸭子项目中,飞行或者叫声等行为是变化的(能飞和不能飞),这个需要抽象成接口,然后放在鸭子的父类中,让子类鸭子去实现
      */
     public void method5() {
@@ -108,8 +109,15 @@ public class MainActivity extends AppCompatActivity {
         greenHeadDuck.fly();
     }
 
+    /**
+     * 工厂模式
+     */
     public void method6() {
+        Sender mail = SendFactory.product("mail");
+        mail.send("hello,我是mail");
 
+        Sender sms = SendFactory.product("sms");
+        sms.send("hello,我是sms");
     }
 
     public void method7() {
