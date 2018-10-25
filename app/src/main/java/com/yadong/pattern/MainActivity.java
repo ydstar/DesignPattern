@@ -11,9 +11,14 @@ import com.yadong.pattern.proxy.AddController;
 import com.yadong.pattern.proxy.ContactController;
 import com.yadong.pattern.single.Single;
 import com.yadong.pattern.single.Single2;
+import com.yadong.pattern.strategy.duck.BaseDuck;
+import com.yadong.pattern.strategy.duck.BeiJingDuck;
+import com.yadong.pattern.strategy.duck.GreenHeadDuck;
 
 /**
  * 设计模式大全
+ *1.变化部分,不变化部分,提取变化部分,抽象成接口+实现
+ *
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -86,8 +91,21 @@ public class MainActivity extends AppCompatActivity {
         Single2 single2 = Single2.getInstance();
     }
 
+    /**
+     * 策略模式
+     * 分别封装行为接口,实现算法族,父类中放行为接口对象,在子类里具体设定行为对象
+     * 原则:分离变化部分,封装接口,基于接口编程各种功能.
+     * 此模式让行为算法的变化独立于算法的使用者
+     *
+     * 鸭子项目中,飞行或者叫声等行为是变化的(能飞和不能飞),这个需要抽象成接口,然后放在鸭子的父类中,让子类鸭子去实现
+     */
     public void method5() {
-
+        BaseDuck beiJingDuck = new BeiJingDuck();
+        BaseDuck greenHeadDuck = new GreenHeadDuck();
+        beiJingDuck.display();
+        greenHeadDuck.fly();
+        beiJingDuck.display();
+        greenHeadDuck.fly();
     }
 
     public void method6() {
