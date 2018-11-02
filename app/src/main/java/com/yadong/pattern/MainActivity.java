@@ -4,8 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.yadong.pattern.builder.Person;
-import com.yadong.pattern.factory.SendFactory;
-import com.yadong.pattern.factory.Sender;
+import com.yadong.pattern.factory_simple.BaseVideo;
+import com.yadong.pattern.factory_simple.JavaVideo;
+import com.yadong.pattern.factory_simple.VideoFactory;
 import com.yadong.pattern.observer.GirlFriendObserver;
 import com.yadong.pattern.observer.MessageObservable;
 import com.yadong.pattern.observer.Observer;
@@ -110,20 +111,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 工厂模式
+     * 简单工厂
      */
     public void method6() {
-        Sender mail = SendFactory.product("mail");
-        mail.send("hello,我是mail");
-
-        Sender sms = SendFactory.product("sms");
-        sms.send("hello,我是sms");
+        VideoFactory videoFactory = new VideoFactory();
+        BaseVideo video = videoFactory.getVideo(JavaVideo.class);
+        if(video == null){
+            return;
+        }
+        video.produce();
     }
 
+    /**
+     * 工厂方法
+     */
     public void method7() {
 
     }
 
+    /**
+     * 抽象工厂
+     */
     public void method8() {
 
     }
