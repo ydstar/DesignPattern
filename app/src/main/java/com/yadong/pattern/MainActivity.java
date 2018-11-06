@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.yadong.pattern.builder.Person;
+import com.yadong.pattern.factory_method.JavaVideoFactory;
+import com.yadong.pattern.factory_method.Video;
 import com.yadong.pattern.factory_simple.BaseVideo;
 import com.yadong.pattern.factory_simple.JavaVideo;
 import com.yadong.pattern.factory_simple.VideoFactory;
@@ -124,9 +126,12 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 工厂方法
+     * 定义一个创建对象的接口,但是让实现这个接口的类来决定实例化哪个类,工厂方法让类的实例化推迟到子类中进行
      */
     public void method7() {
-
+        JavaVideoFactory factory = new JavaVideoFactory();
+        Video video = factory.getVideo();
+        video.produce();
     }
 
     /**
