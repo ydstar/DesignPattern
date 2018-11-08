@@ -95,9 +95,11 @@ public class MainActivity extends AppCompatActivity {
      */
     public void method3() {
         Person person = Person.builder()
-                .setName("晓明")
-                .setAge(10)
+                .setName("风清扬")
+                .setAge(99)
+                .setKungFu("独孤九剑")
                 .build();
+        System.out.println(person.toString());
     }
 
     /**
