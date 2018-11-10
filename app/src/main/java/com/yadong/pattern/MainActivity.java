@@ -84,7 +84,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 抽象工厂
+     * 抽象工厂:提供了一个创建一系列相关或相互依赖对象的接口
+     * 特征:无须指定他们具体的类
+     * 类型:创建型
      */
     public void method2() {
 
