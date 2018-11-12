@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.yadong.pattern.builder.Person;
+import com.yadong.pattern.factory_abstract.Article;
+import com.yadong.pattern.factory_abstract.CourseFactory;
+import com.yadong.pattern.factory_abstract.JavaCourseFactory;
 import com.yadong.pattern.factory_method.JavaVideoFactory;
 import com.yadong.pattern.factory_method.Video;
 import com.yadong.pattern.factory_simple.BaseVideo;
@@ -24,6 +27,7 @@ import com.yadong.pattern.strategy.duck.GreenHeadDuck;
  * 设计模式大全
  *
  *创建型模式
+ *      |0---简单工厂模式(它不属于23种设计模式)
  *      |1---工厂方法模式
  *      |2---抽象工厂模式
  *      |3---建造者模式
@@ -62,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     }
     /*******************创建型模式***********************************************/
     /**
-     * 简单工厂
+     * 简单工厂,它不属于23种设计模式
      */
     public void method0() {
         VideoFactory videoFactory = new VideoFactory();
@@ -89,7 +93,12 @@ public class MainActivity extends AppCompatActivity {
      * 类型:创建型
      */
     public void method2() {
+        CourseFactory courseFactory = new JavaCourseFactory();
+        com.yadong.pattern.factory_abstract.Video video = courseFactory.getVideo();
+        Article article = courseFactory.getArticle();
 
+        video.produce();
+        article.produce();
     }
 
     /**
