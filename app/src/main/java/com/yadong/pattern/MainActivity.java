@@ -2,6 +2,7 @@ package com.yadong.pattern;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.yadong.pattern.builder.Person;
 import com.yadong.pattern.factory_abstract.Article;
@@ -68,13 +69,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+    }
+
+    /**
+     * 测试按钮
+     */
+    public void testClick(View view) {
         try {
             method5();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
-
     }
+
     /*******************创建型模式***********************************************/
     /**
      * 简单工厂,它不属于23种设计模式
@@ -396,6 +403,7 @@ public class MainActivity extends AppCompatActivity {
     public void method23() {
 
     }
+
 
 
 }
