@@ -113,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(person.toString());
     }
 
+
     /**
      * 单例设计模式
      */
