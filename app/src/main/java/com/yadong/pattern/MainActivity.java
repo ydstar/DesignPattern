@@ -96,18 +96,12 @@ public class MainActivity extends AppCompatActivity {
     public void method0() {
         VideoFactory videoFactory = new VideoFactory();
         //创建JavaVideo,根据类的Class字节码
-        com.yadong.pattern.factory_simple.BaseVideo video = videoFactory.getVideo(JavaVideo.class);
-        if(video == null){
-            return;
-        }
-        video.produce();
+        com.yadong.pattern.factory_simple.BaseVideo javaVideo = videoFactory.getVideo(JavaVideo.class);
+        javaVideo.produce();
 
         //创建PythonVideo,根据String字符串类型
-        com.yadong.pattern.factory_simple.BaseVideo java = videoFactory.getVideo("python");
-        if(java == null){
-            return;
-        }
-        java.produce();
+        com.yadong.pattern.factory_simple.BaseVideo pythonVideo = videoFactory.getVideo("python");
+        pythonVideo.produce();
     }
 
     /**
