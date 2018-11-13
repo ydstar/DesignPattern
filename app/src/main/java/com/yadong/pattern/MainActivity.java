@@ -9,8 +9,8 @@ import com.yadong.pattern.factory_abstract.Article;
 import com.yadong.pattern.factory_abstract.CourseFactory;
 import com.yadong.pattern.factory_abstract.JavaCourseFactory;
 import com.yadong.pattern.factory_method.JavaVideoFactory;
-import com.yadong.pattern.factory_method.Video;
-import com.yadong.pattern.factory_simple.BaseVideo;
+import com.yadong.pattern.factory_method.PythonVideoFactory;
+import com.yadong.pattern.factory_method.BaseVideo;
 import com.yadong.pattern.factory_simple.JavaVideo;
 import com.yadong.pattern.factory_simple.VideoFactory;
 import com.yadong.pattern.observer.GirlFriendObserver;
@@ -84,29 +84,63 @@ public class MainActivity extends AppCompatActivity {
 
     /*******************创建型模式***********************************************/
     /**
-     * 简单工厂,它不属于23种设计模式
-     * 特征:
+     * 简单工厂,它不属于GOF23种设计模式
+     * 定义:由一个工厂对象决定创建出哪一种产品类的实例
      * 类型:创建型
+     * 适用场景:
+     *         1.工厂类负责创建的对象比较少
+     *         2.客户端(应用层)只知道传入工厂类的参数,对于如何创建对象并不关心
+     * 优点:
+     *      1.只需要传入一个正确的参数,就可以获取你所需要的对象而无需知道其创建细节
+     * 缺点:
+     *      1.工厂类的职责相对过重,增加新的产品,需要修改工厂类的判断逻辑,违背开闭原则
      */
     public void method0() {
         VideoFactory videoFactory = new VideoFactory();
-        BaseVideo video = videoFactory.getVideo(JavaVideo.class);
+        //创建JavaVideo,根据类的Class字节码
+        com.yadong.pattern.factory_simple.BaseVideo video = videoFactory.getVideo(JavaVideo.class);
         if(video == null){
             return;
         }
         video.produce();
+
+        //创建PythonVideo,根据String字符串类型
+        com.yadong.pattern.factory_simple.BaseVideo java = videoFactory.getVideo("python");
+        if(java == null){
+            return;
+        }
+        java.produce();
     }
 
     /**
      * 工厂方法
      * 定义:定义一个创建对象的接口,但是让实现这个接口的类来决定实例化哪个类,工厂方法让类的实例化推迟到子类中进行
-     * 特征:
      * 类型:创建型
+     * 适用场景:
+     *         1.创建对象需要大量重复的代码
+     *         2.客户端(应用层)不依赖于产品类实例如何被创建,实现等细节
+     *         3.一个类通过其子类来指定创建哪个对象
+     *         4.创建对象的过程推迟到子类中来
+     * 优点:
+     *      1.用户只需要关心所需产品对应的工厂,无需关心创建细节
+     *      2.加入新产品符合开闭原则,提高可扩展性
+     * 缺点:
+     *      1.类的个数容易过多,增加复杂度
+     *      2.增加了系统的抽象性和理解难度
+     *
+     * 个人理解:
+     *          我们只需要关心产品对应的工厂,而不需要关心其细节.然后想创建什么类就找对应的工厂.然后类的具体实例化延迟到子类工厂类中去进行
      */
     public void method1() {
+        //创建JavaVideo,对应的工厂创建对应的对象
         JavaVideoFactory factory = new JavaVideoFactory();
-        Video video = factory.getVideo();
+        BaseVideo video = factory.getVideo();
         video.produce();
+
+        //创建PythonVideo,对应的工厂创建对应的对象
+        PythonVideoFactory pythonVideoFactory = new PythonVideoFactory();
+        BaseVideo pythonVideo = pythonVideoFactory.getVideo();
+        pythonVideo.produce();
     }
 
     /**
@@ -114,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
      * 定义:提供了一个创建一系列相关或相互依赖对象的接口
      * 特征:无须指定他们具体的类
      * 类型:创建型
+     * 适用场景:
      */
     public void method2() {
         CourseFactory courseFactory = new JavaCourseFactory();
@@ -125,9 +160,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * builder设计模式
-     * 特征:
+     * 建造者模式
+     * 定义:将一个复杂的对象的构建和它的表示分离,使得同样的构建过程可以创建不同的表示
+     * 特征:用户只需指定需要建造的类型就可以得到它们,建造过程和细节不需要知道
      * 类型:创建型
+     * 适用场景:
+     *         1.如果一个对象有非常复杂的内部结构(很多属性字段)
+     *         2.想把复杂对象的创建和使用分离
+     * 优点:
+     *      1.封装性好,创建和使用分离。
+     *      2.扩展性好,建造类之间独立,一定程度上解耦
+     * 缺点:
+     *      1.产生多余的Builder对象。
+     *      2.产品内部发生变化,建造者都要修改,成本比较大
      */
     public void method3() {
         Person person = Person.builder()
@@ -154,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
      * 定义:指原型实例指定创建对象的种类,并且通过拷贝这些原型创建新的对象
      * 特征:不需要知道任何创建的细节,不调用构造函数
      * 类型:创建型
-     * 使用场景:
+     * 适用场景:
      *         1.类初始化消耗较多资源
      *         2.new产生的一个对象需要非常繁琐的过程(属性赋值,访问权限等)
      *         3.构造函数比较复杂
