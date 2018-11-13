@@ -3,7 +3,7 @@ package com.yadong.pattern.factory_abstract.python_course;
 import com.yadong.pattern.factory_abstract.base.BaseVideo;
 
 /**
- *
+ * Python录像对象
  */
 public class PythonVideo extends BaseVideo {
     @Override
