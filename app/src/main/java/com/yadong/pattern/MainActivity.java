@@ -5,9 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.yadong.pattern.builder.Person;
-import com.yadong.pattern.factory_abstract.Article;
+import com.yadong.pattern.factory_abstract.BaseArticle;
 import com.yadong.pattern.factory_abstract.CourseFactory;
-import com.yadong.pattern.factory_abstract.JavaCourseFactory;
+import com.yadong.pattern.factory_abstract.PythonCourse.PythonCourseFactory;
+import com.yadong.pattern.factory_abstract.javaCourse.JavaCourseFactory;
 import com.yadong.pattern.factory_method.JavaVideoFactory;
 import com.yadong.pattern.factory_method.PythonVideoFactory;
 import com.yadong.pattern.factory_method.BaseVideo;
@@ -129,7 +130,8 @@ public class MainActivity extends AppCompatActivity {
      *      2.增加了系统的抽象性和理解难度
      *
      * 个人理解:
-     *          我们只需要关心产品对应的工厂,而不需要关心其细节.然后想创建什么类就找对应的工厂.然后类的具体实例化延迟到子类工厂类中去进行
+     *          我们只需要关心产品对应的工厂,而不需要关心其细节.然后想创建什么类就找对应的工厂.
+     *          然后类的具体实例化延迟到子类工厂类中去进行
      */
     public void method1() {
         //创建JavaVideo,对应的工厂创建对应的对象
@@ -149,14 +151,27 @@ public class MainActivity extends AppCompatActivity {
      * 特征:无须指定他们具体的类
      * 类型:创建型
      * 适用场景:
+     *         1.客户端(应用层)不依赖于产品实例如何被创建,实现等细节
+     *         2.强调一系列相关的产品对象(属于同一产品族)一起使用创建对象需要大量重复的代码
+     *         3.提供一个产品类的库,所有的产品以同样的接口出现,从而使客户端不依赖于具体实现
+     * 优点:
+     *      1.具体产品在应用层代码隔离,无需关心创建细节
+     *      2.将一个系列的产品族统一到一起创建
+     * 缺点:
+     *      1.规定了所有可能被创建的产品集合,产品族中扩展新的产品困难,需要修改抽象工厂的接口
+     *      2.增加了系统的抽象性和理解难度
      */
     public void method2() {
-        CourseFactory courseFactory = new JavaCourseFactory();
-        com.yadong.pattern.factory_abstract.Video video = courseFactory.getVideo();
-        Article article = courseFactory.getArticle();
+        //通过JavaCourseFactory去创建javaVideo和javaArticle
+        CourseFactory courseFactory = new JavaCourseFactory();//创建Java课程工厂
+        courseFactory.getVideo().produce();//通过工厂类得到JavaVideo对象并进行创建
+        courseFactory.getArticle().produce();//通过工厂类得到JavaArticle对象并进行创建
 
-        video.produce();
-        article.produce();
+
+        //通过PythonCourseFactory去创建pythonVideo和pythonArticle
+        PythonCourseFactory pythonCourseFactory = new PythonCourseFactory();//创建Python课程工厂
+        pythonCourseFactory.getVideo().produce();//通过工厂类得到PythonVideo对象并进行创建
+        pythonCourseFactory.getArticle().produce();//通过工厂类得到PythonArticle对象并进行创建
     }
 
     /**

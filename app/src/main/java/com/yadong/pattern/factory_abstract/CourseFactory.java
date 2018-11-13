@@ -1,7 +1,11 @@
 package com.yadong.pattern.factory_abstract;
 
-public interface CourseFactory {
-    Video getVideo();
 
-    Article getArticle();
+/**
+ * 抽象工厂接口
+ */
+public interface CourseFactory {
+    BaseVideo getVideo();
+
+    BaseArticle getArticle();
 }
