@@ -1,11 +1,11 @@
 package com.yadong.pattern.factory_abstract.python_course;
 
-import com.yadong.pattern.factory_abstract.BaseArticle;
+import com.yadong.pattern.factory_abstract.BaseNotes;
 import com.yadong.pattern.factory_abstract.BaseVideo;
 import com.yadong.pattern.factory_abstract.CourseFactory;
 
 /**
- * 具体的Python课程工厂,专门生产PythonVideo和PythonArticle
+ * 具体的Python课程工厂,专门生产PythonVideo和PythonNotes
  */
 public class PythonCourseFactory implements CourseFactory {
 
@@ -15,7 +15,7 @@ public class PythonCourseFactory implements CourseFactory {
     }
 
     @Override
-    public BaseArticle getArticle() {
-        return new PythonArticle();
+    public BaseNotes getNotes() {
+        return new PythonNotes();
     }
 }

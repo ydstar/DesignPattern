@@ -7,5 +7,5 @@ package com.yadong.pattern.factory_abstract;
 public interface CourseFactory {
     BaseVideo getVideo();
 
-    BaseArticle getArticle();
+    BaseNotes getNotes();
 }

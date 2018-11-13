@@ -161,16 +161,16 @@ public class MainActivity extends AppCompatActivity {
      *      2.增加了系统的抽象性和理解难度
      */
     public void method2() {
-        //通过JavaCourseFactory去创建javaVideo和javaArticle
+        //通过JavaCourseFactory去创建javaVideo和JavaNotes
         CourseFactory courseFactory = new JavaCourseFactory();//创建Java课程工厂
         courseFactory.getVideo().produce();//通过工厂类得到JavaVideo对象并进行创建
-        courseFactory.getArticle().produce();//通过工厂类得到JavaArticle对象并进行创建
+        courseFactory.getNotes().produce();//通过工厂类得到JavaNotes对象并进行创建
 
 
-        //通过PythonCourseFactory去创建pythonVideo和pythonArticle
+        //通过PythonCourseFactory去创建pythonVideo和PythonNotes
         PythonCourseFactory pythonCourseFactory = new PythonCourseFactory();//创建Python课程工厂
         pythonCourseFactory.getVideo().produce();//通过工厂类得到PythonVideo对象并进行创建
-        pythonCourseFactory.getArticle().produce();//通过工厂类得到PythonArticle对象并进行创建
+        pythonCourseFactory.getNotes().produce();//通过工厂类得到PythonNotes对象并进行创建
     }
 
     /**
