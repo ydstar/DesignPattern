@@ -1,21 +1,21 @@
-package com.yadong.pattern.factory_abstract.javaCourse;
+package com.yadong.pattern.factory_abstract.python_course;
 
 import com.yadong.pattern.factory_abstract.BaseArticle;
 import com.yadong.pattern.factory_abstract.BaseVideo;
 import com.yadong.pattern.factory_abstract.CourseFactory;
 
 /**
- * 具体的Java课程工厂,专门生产JavaVideo和JavaArticle
+ * 具体的Python课程工厂,专门生产PythonVideo和PythonArticle
  */
-public class JavaCourseFactory implements CourseFactory {
+public class PythonCourseFactory implements CourseFactory {
 
     @Override
     public BaseVideo getVideo() {
-        return new JavaVideo();
+        return new PythonVideo();
     }
 
     @Override
     public BaseArticle getArticle() {
-        return new JavaArticle();
+        return new PythonArticle();
     }
 }

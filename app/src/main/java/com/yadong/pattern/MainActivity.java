@@ -5,10 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.yadong.pattern.builder.Person;
-import com.yadong.pattern.factory_abstract.BaseArticle;
 import com.yadong.pattern.factory_abstract.CourseFactory;
-import com.yadong.pattern.factory_abstract.PythonCourse.PythonCourseFactory;
-import com.yadong.pattern.factory_abstract.javaCourse.JavaCourseFactory;
+import com.yadong.pattern.factory_abstract.python_course.PythonCourseFactory;
+import com.yadong.pattern.factory_abstract.java_course.JavaCourseFactory;
 import com.yadong.pattern.factory_method.JavaVideoFactory;
 import com.yadong.pattern.factory_method.PythonVideoFactory;
 import com.yadong.pattern.factory_method.BaseVideo;
