@@ -1,5 +1,5 @@
 package com.yadong.pattern.factory_abstract;
 
-public abstract class BaseNotes {
+public abstract class BaseNote {
     public abstract void produce();
 }
