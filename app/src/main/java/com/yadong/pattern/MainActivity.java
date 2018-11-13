@@ -8,9 +8,9 @@ import com.yadong.pattern.builder.Person;
 import com.yadong.pattern.factory_abstract.base.BaseCourseFactory;
 import com.yadong.pattern.factory_abstract.python_course.PythonCourseFactory;
 import com.yadong.pattern.factory_abstract.java_course.JavaCourseFactory;
-import com.yadong.pattern.factory_method.JavaVideoFactory;
-import com.yadong.pattern.factory_method.PythonVideoFactory;
-import com.yadong.pattern.factory_method.BaseVideo;
+import com.yadong.pattern.factory_method.java_video.JavaVideoFactory;
+import com.yadong.pattern.factory_method.python_video.PythonVideoFactory;
+import com.yadong.pattern.factory_method.base.BaseVideo;
 import com.yadong.pattern.factory_simple.JavaVideo;
 import com.yadong.pattern.factory_simple.VideoFactory;
 import com.yadong.pattern.observer.GirlFriendObserver;
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     public void testClick(View view) {
 
 
-        method2();
+        method1();
     }
 
     /*******************创建型模式***********************************************/

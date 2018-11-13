@@ -1,4 +1,6 @@
-package com.yadong.pattern.factory_method;
+package com.yadong.pattern.factory_method.java_video;
+
+import com.yadong.pattern.factory_method.base.BaseVideo;
 
 /**
  * JavaVideo是继承BaseVideo的
