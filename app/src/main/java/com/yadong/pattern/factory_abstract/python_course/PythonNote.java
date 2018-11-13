@@ -1,6 +1,6 @@
 package com.yadong.pattern.factory_abstract.python_course;
 
-import com.yadong.pattern.factory_abstract.BaseNote;
+import com.yadong.pattern.factory_abstract.base.BaseNote;
 
 /**
  *

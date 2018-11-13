@@ -1,13 +1,13 @@
 package com.yadong.pattern.factory_abstract.java_course;
 
-import com.yadong.pattern.factory_abstract.BaseNote;
-import com.yadong.pattern.factory_abstract.BaseVideo;
-import com.yadong.pattern.factory_abstract.CourseFactory;
+import com.yadong.pattern.factory_abstract.base.BaseNote;
+import com.yadong.pattern.factory_abstract.base.BaseVideo;
+import com.yadong.pattern.factory_abstract.base.BaseCourseFactory;
 
 /**
  * 具体的Java课程工厂,专门生产JavaVideo和JavaNotes
  */
-public class JavaCourseFactory implements CourseFactory {
+public class JavaCourseFactory implements BaseCourseFactory {
 
     @Override
     public BaseVideo getVideo() {

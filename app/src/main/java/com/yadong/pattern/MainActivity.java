@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.yadong.pattern.builder.Person;
-import com.yadong.pattern.factory_abstract.CourseFactory;
+import com.yadong.pattern.factory_abstract.base.BaseCourseFactory;
 import com.yadong.pattern.factory_abstract.python_course.PythonCourseFactory;
 import com.yadong.pattern.factory_abstract.java_course.JavaCourseFactory;
 import com.yadong.pattern.factory_method.JavaVideoFactory;
@@ -75,11 +75,9 @@ public class MainActivity extends AppCompatActivity {
      * 测试按钮
      */
     public void testClick(View view) {
-        try {
-            method5();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
+
+
+        method2();
     }
 
     /*******************创建型模式***********************************************/
@@ -162,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void method2() {
         //通过JavaCourseFactory去创建javaVideo和JavaNote
-        CourseFactory courseFactory = new JavaCourseFactory();//创建Java课程工厂
+        BaseCourseFactory courseFactory = new JavaCourseFactory();//创建Java课程工厂
         courseFactory.getVideo().produce();//通过工厂类得到JavaVideo对象并进行创建
         courseFactory.getNote().produce();//通过工厂类得到JavaNote对象并进行创建
 
