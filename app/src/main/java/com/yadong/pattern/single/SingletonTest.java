@@ -36,6 +36,7 @@ public class SingletonTest {
         hungrySingleton2();//饿汉式,通过反射的方式去破解单例,可以防御
         LazyDoubleCheckSingleton();//懒汉式,通过反射的方式去破解单例,防御不了!!!!!!
         enumInstance();//枚举式,免疫反射和序列化破解单例
+        containerSingleton();
     }
 
     /**
@@ -119,5 +120,16 @@ public class SingletonTest {
         //正常方式创建
         EnumInstance oldInstance = EnumInstance.getInstance();
         Object newData = oldInstance.getData();
+    }
+
+    /**
+     * 容器的单例模式
+     */
+    private static void containerSingleton() {
+        ContainerSingleton.putInstance("city","北京");
+        ContainerSingleton.putInstance("风清扬","独孤九剑");
+
+        String str = (String) ContainerSingleton.getInstance("风清扬");
+        System.out.println(str);
     }
 }
