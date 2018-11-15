@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
+ *容器的单例模式
  */
 public class ContainerSingleton {
 
@@ -24,6 +24,5 @@ public class ContainerSingleton {
     public static Object getInstance(String key) {
         return singletonMap.get(key);
     }
-
 
 }
