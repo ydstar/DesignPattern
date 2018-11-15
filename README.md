@@ -5,7 +5,7 @@
 * 对扩展开放,对修改关闭
 
 ### 创建型模式
-* 简单工厂模式(Simple Factoty)
+* [简单工厂模式(Simple Factoty)](https://www.jianshu.com/p/ceb5131b5953)
 * 工厂方法模式(Method Factoty)
 * 抽象工厂模式(Abstarct Factory)
 * 建造者模式(Builder)
