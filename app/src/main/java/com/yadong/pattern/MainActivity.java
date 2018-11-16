@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.yadong.pattern.builder.BuilderTest;
 import com.yadong.pattern.builder.Person;
+import com.yadong.pattern.facade.FacadeTest;
 import com.yadong.pattern.factory_abstract.FactoryAbstractTest;
 import com.yadong.pattern.factory_abstract.base.BaseCourseFactory;
 import com.yadong.pattern.factory_abstract.python_course.PythonCourseFactory;
@@ -99,8 +100,9 @@ public class MainActivity extends AppCompatActivity {
 //        method1();
 //        method2();
 //        method3();
-        method4();
+//        method4();
 //        method5();
+        method6();
     }
 
     /*******************创建型模式***********************************************/
@@ -152,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
      * 外观模式
      */
     public void method6() {
-
+        FacadeTest.test();
     }
 
     /**
