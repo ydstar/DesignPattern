@@ -22,7 +22,6 @@ package com.yadong.pattern.facade;
 public class FacadeTest {
 
 
-
     /**
      * 现在的业务场景:
      * 某电商平台上面有积分可以换小礼物,然后需要
