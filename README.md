@@ -6,12 +6,12 @@
 
 ### 创建型模式
 * [简单工厂模式(Simple Factoty)](https://www.jianshu.com/p/ceb5131b5953)
-* [工厂方法模式(Method Factoty)]()
-* [抽象工厂模式(Abstarct Factory)]()
-* [建造者模式(Builder)]()
+* 工厂方法模式(Method Factoty)
+* 抽象工厂模式(Abstarct Factory)
+* 建造者模式(Builder)
     >用于创建复合对象
-* [单例模式(Singleton)]()
-* [原型模式(prototype)]()
+* 单例模式(Singleton)
+* 原型模式(prototype)
     >对象的拷贝
 
 ### 结构型模式
