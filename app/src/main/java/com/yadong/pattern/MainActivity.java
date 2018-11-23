@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.yadong.pattern.creational.builder.BuilderTest;
+import com.yadong.pattern.structural.decorator.DecoratorTest;
 import com.yadong.pattern.structural.facade.FacadeTest;
 import com.yadong.pattern.creational.factory_abstract.FactoryAbstractTest;
 import com.yadong.pattern.creational.factory_method.FactoryMethodTest;
@@ -17,36 +18,36 @@ import com.yadong.pattern.behavioral.strategy.StrategyTest;
 
 /**
  * 设计模式大全
- *
- *创建型模式
- *      |1---简单工厂模式(它不属于23种设计模式)
- *      |2---工厂方法模式
- *      |3---抽象工厂模式
- *      |4---建造者模式
- *      |5---单例模式
- *      |6---原型模式
- *
- *结构型模式
- *      |7---外观模式
- *      |8---装饰器模式
- *      |9---适配器模式
- *      |10---享元模式
- *      |11---组合模式
- *      |12---桥接模式
- *      |13---代理模式
- *
- *行为型模式
- *      |14---模板方法模式
- *      |15---迭代器模式
- *      |16---策略模式
- *      |17---解释器模式
- *      |18---观察者模式
- *      |19---备忘录模式
- *      |20---命令模式
- *      |21---中介者模式
- *      |22---责任链模式
- *      |23---访问者模式
- *      |24---状态模式
+ * <p>
+ * 创建型模式
+ * |1---简单工厂模式(它不属于23种设计模式)
+ * |2---工厂方法模式
+ * |3---抽象工厂模式
+ * |4---建造者模式
+ * |5---单例模式
+ * |6---原型模式
+ * <p>
+ * 结构型模式
+ * |7---外观模式
+ * |8---装饰器模式
+ * |9---适配器模式
+ * |10---享元模式
+ * |11---组合模式
+ * |12---桥接模式
+ * |13---代理模式
+ * <p>
+ * 行为型模式
+ * |14---模板方法模式
+ * |15---迭代器模式
+ * |16---策略模式
+ * |17---解释器模式
+ * |18---观察者模式
+ * |19---备忘录模式
+ * |20---命令模式
+ * |21---中介者模式
+ * |22---责任链模式
+ * |23---访问者模式
+ * |24---状态模式
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -59,13 +60,15 @@ public class MainActivity extends AppCompatActivity {
     /**
      * 测试按钮
      */
-    public void testClick(View view)throws Exception {
-//        method1();
-//        method2();
-//        method3();
-//        method4();
-//        method5();
-        method6();
+    public void testClick(View view) throws Exception {
+        //        method1();
+        //        method2();
+        //        method3();
+        //        method4();
+        //        method5();
+        //        method6();
+        //        method7();
+        method8();
     }
 
     /*******************创建型模式***********************************************/
@@ -100,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * 单例设计模式
      */
-    public void method5()throws Exception {
+    public void method5() throws Exception {
         SingletonTest.test();
     }
 
@@ -124,10 +127,7 @@ public class MainActivity extends AppCompatActivity {
      * 装饰器模式
      */
     public void method8() {
-
-
-
-
+        DecoratorTest.testV2();
     }
 
     /**
@@ -242,7 +242,6 @@ public class MainActivity extends AppCompatActivity {
     public void method24() {
 
     }
-
 
 
 }
