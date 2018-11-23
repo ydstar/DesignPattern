@@ -4,8 +4,8 @@ package com.yadong.pattern.structural.decorator.v2;
  * 抽象的装饰类
  * 继承抽象的煎饼(ABatterCake),这个时候当前类(AbstractDecorator)和具体的煎饼类(BatterCake)都是继承于ABatterCake
  *
- * 如何让当前类和具体的煎饼类产生联系呢?
- * 可以通过两者共同的父类,可以把父类(ABatterCake)通过构造参数传递进来
+ * 因为要给煎饼进行装饰,所以如何让当前类和具体的煎饼类产生联系呢?
+ * 可以通过两者共同的父类,可以把父类(ABatterCake)通过构造参数传递进来,这样具体的煎饼就能传进来了,就能在具体的煎饼上进行装饰
  *
  */
 public class AbstractDecorator  extends ABatterCake{
