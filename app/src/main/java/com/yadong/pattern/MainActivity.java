@@ -13,6 +13,7 @@ import com.yadong.pattern.creational.factory_method.FactoryMethodTest;
 import com.yadong.pattern.creational.factory_simple.FactorySimpleTest;
 import com.yadong.pattern.behavioral.observer.ObserverTest;
 import com.yadong.pattern.creational.prototype.PrototypeTest;
+import com.yadong.pattern.structural.flyweight.FlyweightTest;
 import com.yadong.pattern.structural.proxy.ProxyTest;
 import com.yadong.pattern.creational.single.SingletonTest;
 import com.yadong.pattern.behavioral.strategy.StrategyTest;
@@ -70,7 +71,8 @@ public class MainActivity extends AppCompatActivity {
         //        method6();
         //        method7();
 //        method8();\
-        method9();
+//        method9();
+        method10();
     }
 
     /*******************创建型模式***********************************************/
@@ -145,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
      * 享元模式
      */
     public void method10() {
-
+        FlyweightTest.test();
     }
 
     /**
