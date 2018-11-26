@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.yadong.pattern.creational.builder.BuilderTest;
+import com.yadong.pattern.structural.adapter.AdapterTest;
 import com.yadong.pattern.structural.decorator.DecoratorTest;
 import com.yadong.pattern.structural.facade.FacadeTest;
 import com.yadong.pattern.creational.factory_abstract.FactoryAbstractTest;
@@ -68,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
         //        method5();
         //        method6();
         //        method7();
-        method8();
+//        method8();\
+        method9();
     }
 
     /*******************创建型模式***********************************************/
@@ -134,7 +136,9 @@ public class MainActivity extends AppCompatActivity {
      * 适配器模式
      */
     public void method9() {
-
+        AdapterTest.classAdapterTest();
+        AdapterTest.objectAdapterTest();
+        AdapterTest.powerAdapter();
     }
 
     /**
