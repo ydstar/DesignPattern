@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.yadong.pattern.creational.builder.BuilderTest;
 import com.yadong.pattern.structural.adapter.AdapterTest;
+import com.yadong.pattern.structural.bridge.BridgeTest;
 import com.yadong.pattern.structural.composite.CompositeTest;
 import com.yadong.pattern.structural.decorator.DecoratorTest;
 import com.yadong.pattern.structural.facade.FacadeTest;
@@ -74,7 +75,8 @@ public class MainActivity extends AppCompatActivity {
 //        method8();\
 //        method9();
 //        method10();
-        method11();
+//        method11();
+        method12();
     }
 
     /*******************创建型模式***********************************************/
@@ -163,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
      * 桥接模式
      */
     public void method12() {
-
+        BridgeTest.test();
     }
 
     /**
