@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.yadong.pattern.creational.builder.BuilderTest;
 import com.yadong.pattern.structural.adapter.AdapterTest;
+import com.yadong.pattern.structural.composite.CompositeTest;
 import com.yadong.pattern.structural.decorator.DecoratorTest;
 import com.yadong.pattern.structural.facade.FacadeTest;
 import com.yadong.pattern.creational.factory_abstract.FactoryAbstractTest;
@@ -72,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
         //        method7();
 //        method8();\
 //        method9();
-        method10();
+//        method10();
+        method11();
     }
 
     /*******************创建型模式***********************************************/
@@ -154,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
      * 组合模式
      */
     public void method11() {
-
+        CompositeTest.test();
     }
 
     /**
