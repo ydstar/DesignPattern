@@ -12,8 +12,8 @@ import com.yadong.pattern.structural.composite.CompositeTest;
 import com.yadong.pattern.structural.decorator.DecoratorTest;
 import com.yadong.pattern.structural.facade.FacadeTest;
 import com.yadong.pattern.creational.factory_abstract.FactoryAbstractTest;
-import com.yadong.pattern.creational.factory_method.FactoryMethodTest;
-import com.yadong.pattern.creational.factory_simple.FactorySimpleTest;
+import com.yadong.pattern.creational.factory_method.TestFactoryMethod;
+import com.yadong.pattern.creational.factory_simple.TestFactorySimple;
 import com.yadong.pattern.behavioral.observer.ObserverTest;
 import com.yadong.pattern.creational.prototype.PrototypeTest;
 import com.yadong.pattern.structural.flyweight.FlyweightTest;
@@ -87,14 +87,14 @@ public class MainActivity extends AppCompatActivity {
      * 简单工厂,它不属于GOF23种设计模式
      */
     public void method1() {
-        FactorySimpleTest.test();
+        TestFactorySimple.test();
     }
 
     /**
      * 工厂方法
      */
     public void method2() {
-        FactoryMethodTest.test();
+        TestFactoryMethod.test();
     }
 
     /**

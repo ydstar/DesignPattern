@@ -1,6 +1,7 @@
 package com.yadong.pattern.creational.factory_simple;
 
 /**
+ * 步骤3.创建工厂类，根据传入不同参数创建不同具体产品类的实例对象
  * VideoFactory,工厂类,根据类型去生产具体的对象
  */
 public class VideoFactory {
