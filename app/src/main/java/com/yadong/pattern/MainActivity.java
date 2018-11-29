@@ -18,7 +18,7 @@ import com.yadong.pattern.behavioral.observer.ObserverTest;
 import com.yadong.pattern.creational.prototype.PrototypeTest;
 import com.yadong.pattern.structural.flyweight.FlyweightTest;
 import com.yadong.pattern.structural.proxy.ProxyTest;
-import com.yadong.pattern.creational.single.SingletonTest;
+import com.yadong.pattern.creational.single.TestSingleton;
 import com.yadong.pattern.behavioral.strategy.StrategyTest;
 
 /**
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
      * 单例设计模式
      */
     public void method5() throws Exception {
-        SingletonTest.test();
+        TestSingleton.test();
     }
 
     /**

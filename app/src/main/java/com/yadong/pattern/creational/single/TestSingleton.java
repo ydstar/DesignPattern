@@ -9,27 +9,28 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.Constructor;
 
-public class SingletonTest {
+/**
+ * 单例设计模式
+ * 定义:保证一个类仅有一个实例,并提供一个全局访问点
+ * 类型:创建型
+ * 适用场景:
+ *         1.想确保任何情况下都绝对只有一个实例
+ * 优点:
+ *      1.在内存里只有一个实例,减少了内存开销
+ *      2.可以避免对资源的多重占用
+ *      3.设置了全局访问点,严格控制访问
+ * 缺点:
+ *      1.没有接口,扩展困难
+ * 扩展:
+ *      1.线程安全
+ *      2.延迟加载
+ *      3.序列化和反序列化安全
+ *      4.反射可以破解懒汉式(哪怕双重校验加锁也不好使),但是饿汉式和静态内部类可以防御
+ *
+ */
+public class TestSingleton {
 
-    /**
-     * 单例设计模式
-     * 定义:保证一个类仅有一个实例,并提供一个全局访问点
-     * 类型:创建型
-     * 适用场景:
-     *         1.想确保任何情况下都绝对只有一个实例
-     * 优点:
-     *      1.在内存里只有一个实例,减少了内存开销
-     *      2.可以避免对资源的多重占用
-     *      3.设置了全局访问点,严格控制访问
-     * 缺点:
-     *      1.没有接口,扩展困难
-     * 扩展:
-     *      1.线程安全
-     *      2.延迟加载
-     *      3.序列化和反序列化安全
-     *      4.反射可以破解懒汉式(哪怕双重校验加锁也不好使),但是饿汉式和静态内部类可以防御
-     *
-     */
+
     public static void test()throws Exception {
         staticInnerClassSingleton();//静态内部类方式,通过反射的方式去破解单例,可以防御
         hungrySingleton1();//饿汉式,通过序列化的方式去破解单例,可以防御
@@ -43,7 +44,12 @@ public class SingletonTest {
      * 静态内部类单例
      */
     private static void staticInnerClassSingleton() {
+        StaticInnerClassSingleton single1 = StaticInnerClassSingleton.getInstance();
         StaticInnerClassSingleton single2 = StaticInnerClassSingleton.getInstance();
+        //比较其地址值
+        System.out.println("single1: "+single1);
+        System.out.println("single2"+single2);
+        System.out.println(single1==single2);
     }
 
     /**
@@ -119,7 +125,13 @@ public class SingletonTest {
     private static void enumInstance() {
         //正常方式创建
         EnumInstance oldInstance = EnumInstance.getInstance();
-        Object newData = oldInstance.getData();
+        Object newData1 = oldInstance.getData();
+        Object newData2 = oldInstance.getData();
+        //比较其地址值
+        System.out.println("newData1: "+newData1);
+        System.out.println("newData2"+newData2);
+        System.out.println(newData1==newData2);
+
     }
 
     /**

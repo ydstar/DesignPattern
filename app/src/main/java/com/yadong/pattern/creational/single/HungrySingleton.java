@@ -10,6 +10,7 @@ import java.io.Serializable;
  */
 public class HungrySingleton implements Serializable{
 
+    //步骤1:构造函数私有化
     private HungrySingleton() {
         //防止反射破解,这一招对饿汉式和静态内部类都好使,对懒汉式不好使
         if(HUNGRYSINGLETON!=null){
@@ -17,8 +18,10 @@ public class HungrySingleton implements Serializable{
         }
     }
 
+    //步骤2:创建全局静态final变量
     private static final HungrySingleton HUNGRYSINGLETON = new HungrySingleton();
 
+    //步骤3:对外提供一个静态方法
     public static HungrySingleton getInstance() {
         return HUNGRYSINGLETON;
     }

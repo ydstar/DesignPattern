@@ -3,9 +3,15 @@ package com.yadong.pattern.creational.single;
 /**
  * 双重校验的懒汉式单例模式
  * 但是反射依然可以破解懒汉式单例,因为如果反射先进来,就可以拿到这个类的所有东西,然后创建对象
+ *
+ * 1.构造函数私有化
+ * 2.创建全局静态final变量
+ * 3.对外提供一个静态方法
  */
+
 public class LazyDoubleCheckSingleton {
 
+    //步骤1:构造函数私有化
     private LazyDoubleCheckSingleton() {
 
         /**
@@ -18,8 +24,10 @@ public class LazyDoubleCheckSingleton {
         }
     }
 
+    //步骤2:创建全局静态私有变量
     private static LazyDoubleCheckSingleton mInstance = null;
 
+    //步骤3:对外提供一个静态方法,里面进行了双重校验
     public static LazyDoubleCheckSingleton getInstance() {
         if (mInstance == null) {
             synchronized (LazyDoubleCheckSingleton.class) {
