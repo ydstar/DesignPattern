@@ -15,7 +15,7 @@ import com.yadong.pattern.creational.factory_abstract.TestFactoryAbstract;
 import com.yadong.pattern.creational.factory_method.TestFactoryMethod;
 import com.yadong.pattern.creational.factory_simple.TestFactorySimple;
 import com.yadong.pattern.behavioral.observer.ObserverTest;
-import com.yadong.pattern.creational.prototype.PrototypeTest;
+import com.yadong.pattern.creational.prototype.TestPrototype;
 import com.yadong.pattern.structural.flyweight.FlyweightTest;
 import com.yadong.pattern.structural.proxy.ProxyTest;
 import com.yadong.pattern.creational.single.TestSingleton;
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
      * 原型模式
      */
     public void method6() throws Exception {
-        PrototypeTest.test();
+        TestPrototype.test();
     }
 
 

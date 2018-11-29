@@ -5,30 +5,30 @@ import com.yadong.pattern.creational.prototype.shallow_clone.Mail;
 import com.yadong.pattern.creational.prototype.shallow_clone.MailUtil;
 
 import java.util.Date;
+/**
+ * 原型模式
+ * 定义:指原型实例指定创建对象的种类,并且通过拷贝这些原型创建新的对象
+ * 特征:不需要知道任何创建的细节,不调用构造函数
+ * 类型:创建型
+ * 适用场景:
+ *         1.类初始化消耗较多资源
+ *         2.new产生的一个对象需要非常繁琐的过程(属性赋值,访问权限等)
+ *         3.构造函数比较复杂
+ *         4.循环体中生产大量对象
+ * 优点:
+ *      1.原型模式性能比直接new一个对象性能高
+ *      2.简化创建过程
+ * 缺点:
+ *      1.必须配备克隆方法(这个模式的核心就是clone方法)
+ *      2.对克隆复杂对象或对克隆出的对象进行复杂改造时,容易引入风险
+ *      3.深拷贝,浅拷贝要运用得当
+ * 扩展:
+ *      1.深克隆
+ *      2.浅克隆
+ */
+public class TestPrototype {
 
-public class PrototypeTest {
 
-    /**
-     * 原型模式
-     * 定义:指原型实例指定创建对象的种类,并且通过拷贝这些原型创建新的对象
-     * 特征:不需要知道任何创建的细节,不调用构造函数
-     * 类型:创建型
-     * 适用场景:
-     *         1.类初始化消耗较多资源
-     *         2.new产生的一个对象需要非常繁琐的过程(属性赋值,访问权限等)
-     *         3.构造函数比较复杂
-     *         4.循环体中生产大量对象
-     * 优点:
-     *      1.原型模式性能比直接new一个对象性能高
-     *      2.简化创建过程
-     * 缺点:
-     *      1.必须配备克隆方法(这个模式的核心就是clone方法)
-     *      2.对克隆复杂对象或对克隆出的对象进行复杂改造时,容易引入风险
-     *      3.深拷贝,浅拷贝要运用得当
-     * 扩展:
-     *      1.深克隆
-     *      2.浅克隆
-     */
     public static  void test() throws CloneNotSupportedException {
         shallowClone();
         deepClone();

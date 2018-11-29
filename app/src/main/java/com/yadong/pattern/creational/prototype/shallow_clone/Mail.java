@@ -3,6 +3,7 @@ package com.yadong.pattern.creational.prototype.shallow_clone;
 /**
  * 实现Cloneable接口
  * 当前类是浅拷贝
+ * 步骤1:创建Mail类,实现Cloneable共接口
  */
 public class Mail implements  Cloneable{
 
@@ -48,7 +49,7 @@ public class Mail implements  Cloneable{
     }
 
     /**
-     * 重写clone 方法
+     * 步骤2:重写clone 方法
      */
     @Override
     public Object clone() throws CloneNotSupportedException {
