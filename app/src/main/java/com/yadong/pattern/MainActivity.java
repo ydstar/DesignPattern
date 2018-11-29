@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.yadong.pattern.behavioral.template_method.TestTemplateMethod;
-import com.yadong.pattern.creational.builder.BuilderTest;
+import com.yadong.pattern.creational.builder.TestBuilder;
 import com.yadong.pattern.structural.adapter.AdapterTest;
 import com.yadong.pattern.structural.bridge.BridgeTest;
 import com.yadong.pattern.structural.composite.CompositeTest;
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
      * 建造者模式
      */
     public void method4() {
-        BuilderTest.test();
+        TestBuilder.test();
     }
 
     /**
