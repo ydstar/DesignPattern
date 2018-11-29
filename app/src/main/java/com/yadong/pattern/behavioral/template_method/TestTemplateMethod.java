@@ -21,7 +21,7 @@ package com.yadong.pattern.behavioral.template_method;
  * 扩展:
  *      1.钩子方法
  */
-public class TemplateMethodTest {
+public class TestTemplateMethod {
 
 
     /**

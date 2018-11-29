@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.yadong.pattern.behavioral.template_method.TemplateMethodTest;
+import com.yadong.pattern.behavioral.template_method.TestTemplateMethod;
 import com.yadong.pattern.creational.builder.BuilderTest;
 import com.yadong.pattern.structural.adapter.AdapterTest;
 import com.yadong.pattern.structural.bridge.BridgeTest;
@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
      * 模板方法模式
      */
     public void method14() {
-        TemplateMethodTest.test();
+        TestTemplateMethod.test();
     }
 
     /**
