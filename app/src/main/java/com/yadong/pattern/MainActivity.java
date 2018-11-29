@@ -11,7 +11,7 @@ import com.yadong.pattern.structural.bridge.BridgeTest;
 import com.yadong.pattern.structural.composite.CompositeTest;
 import com.yadong.pattern.structural.decorator.DecoratorTest;
 import com.yadong.pattern.structural.facade.FacadeTest;
-import com.yadong.pattern.creational.factory_abstract.FactoryAbstractTest;
+import com.yadong.pattern.creational.factory_abstract.TestFactoryAbstract;
 import com.yadong.pattern.creational.factory_method.TestFactoryMethod;
 import com.yadong.pattern.creational.factory_simple.TestFactorySimple;
 import com.yadong.pattern.behavioral.observer.ObserverTest;
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
      * 抽象工厂
      */
     public void method3() {
-        FactoryAbstractTest.test();
+        TestFactoryAbstract.test();
     }
 
     /**
