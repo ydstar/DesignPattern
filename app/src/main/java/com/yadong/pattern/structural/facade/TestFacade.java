@@ -19,7 +19,7 @@ package com.yadong.pattern.structural.facade;
  *      2.不符合开闭原则
  *
  */
-public class FacadeTest {
+public class TestFacade {
 
 
     /**
@@ -32,7 +32,7 @@ public class FacadeTest {
      * 总结:
      *    就是说兑换这个小礼物需要走3个子系统,然后我们提供一个外观类对象(GiftExchangeService),提供统一的入口,
      *    让外观类(GiftExchangeService)去和3个子系统通信,然后我们的应用层(也就是FacadeTest这个类)只需要和外观类通信就完了
-     *    应用层(FacadeTest)<=>外观类(GiftExchangeService)<=>3个子系统(QualifyService,PointsPaymentService,LogisticsService)
+     *    应用层(TestFacade)<=>外观类(GiftExchangeService)<=>3个子系统(QualifyService,PointsPaymentService,LogisticsService)
      */
     public static void test(){
         PointGift pointsGift = new PointGift("鼠标");
