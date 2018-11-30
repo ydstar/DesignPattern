@@ -26,7 +26,7 @@ import com.yadong.pattern.structural.adapter.voltage_adapter.PowerAdapter;
  *      1.类适配器---通过类继承来实现的
  *      2.对象适配器---符合组合复用原则,使用委托机制
  */
-public class AdapterTest {
+public class TestAdapter {
 
 
     /**

@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.yadong.pattern.behavioral.template_method.TestTemplateMethod;
 import com.yadong.pattern.creational.builder.TestBuilder;
-import com.yadong.pattern.structural.adapter.AdapterTest;
+import com.yadong.pattern.structural.adapter.TestAdapter;
 import com.yadong.pattern.structural.bridge.BridgeTest;
 import com.yadong.pattern.structural.composite.CompositeTest;
 import com.yadong.pattern.structural.decorator.DecoratorTest;
@@ -145,9 +145,9 @@ public class MainActivity extends AppCompatActivity {
      * 适配器模式
      */
     public void method9() {
-        AdapterTest.classAdapterTest();
-        AdapterTest.objectAdapterTest();
-        AdapterTest.powerAdapter();
+        TestAdapter.classAdapterTest();
+        TestAdapter.objectAdapterTest();
+        TestAdapter.powerAdapter();
     }
 
     /**
