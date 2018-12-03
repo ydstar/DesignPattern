@@ -17,7 +17,7 @@ package com.yadong.pattern.structural.composite;
  *         1.限制类型时会较为复杂
  *         2.使设计变的更加抽象
  */
-public class CompositeTest {
+public class TestComposite {
 
 
     /**

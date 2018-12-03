@@ -8,7 +8,7 @@ import com.yadong.pattern.behavioral.template_method.TestTemplateMethod;
 import com.yadong.pattern.creational.builder.TestBuilder;
 import com.yadong.pattern.structural.adapter.TestAdapter;
 import com.yadong.pattern.structural.bridge.BridgeTest;
-import com.yadong.pattern.structural.composite.CompositeTest;
+import com.yadong.pattern.structural.composite.TestComposite;
 import com.yadong.pattern.structural.decorator.DecoratorTest;
 import com.yadong.pattern.structural.facade.TestFacade;
 import com.yadong.pattern.creational.factory_abstract.TestFactoryAbstract;
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
      * 组合模式
      */
     public void method11() {
-        CompositeTest.test();
+        TestComposite.test();
     }
 
     /**

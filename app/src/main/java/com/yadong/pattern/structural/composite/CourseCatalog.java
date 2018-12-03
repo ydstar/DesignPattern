@@ -7,7 +7,7 @@ import java.util.List;
  * 课程目录
  */
 public class CourseCatalog extends CatalogComponent {
-    private List<CatalogComponent> items = new ArrayList<CatalogComponent>();
+    private List<CatalogComponent> items = new ArrayList<>();
     private String name;
     private Integer level;
 
