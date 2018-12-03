@@ -6,30 +6,30 @@
 
 ### 创建型模式
 * [简单工厂模式(Simple Factoty)](https://www.jianshu.com/p/ceb5131b5953)
-* 工厂方法模式(Method Factoty)
-* 抽象工厂模式(Abstarct Factory)
-* 建造者模式(Builder)
+* [工厂方法模式(Method Factoty)](https://www.jianshu.com/p/4fbe55b172b7)
+* [抽象工厂模式(Abstarct Factory)](https://www.jianshu.com/p/84a253651b21)
+* [建造者模式(Builder)](https://www.jianshu.com/p/c7541ce6672a)
     >用于创建复合对象
-* 单例模式(Singleton)
-* 原型模式(prototype)
+* [单例模式(Singleton)](https://www.jianshu.com/p/e0831dad87b5)
+* [原型模式(prototype)](https://www.jianshu.com/p/c16ef296c1f9)
     >对象的拷贝
 
 ### 结构型模式
-* 外观模式(facade)
+* [外观模式(facade)](https://www.jianshu.com/p/3241c99e0724)
     >简化接口,降低复杂性(ps: 即定义一个高级接口,操作一系列接口)
-* 装饰器模式(decorator)
+* [装饰器模式(decorator)](https://www.jianshu.com/p/a21c3599fe5e)
     >不改变接口的情况下,添加责任;
     例子 javaI/O
-* 适配器模式(adapter)
+* [适配器模式(adapter)](https://www.jianshu.com/p/acc82da59762)
     >接口转换
-* 享元模式(Flyweight)
+* [享元模式(Flyweight)](https://www.jianshu.com/p/8e6d4a692a56)
     >采用一个共享来避免大量拥有相同内容对象的开销
-* 组合模式(composite)
+* [组合模式(composite)](https://www.jianshu.com/p/bc973a1c024a)
     >对象组合成树状结构,实现统一处理个别对象及对象组合
-* 桥接模式(bridge)
+* [桥接模式(bridge)](https://www.jianshu.com/p/fc82a284177e)
     >主要特点是把抽象（abstraction）与行为实现（implementation）分离开来，
     从而可以保持各部分的独立性以及应对它们的功能扩展
-* 代理模式(proxy)
+* [代理模式(proxy)](https://www.jianshu.com/p/19a1abb629b0)
     >为另一个对象提供一个对象或占位符以控制对这个对象的访问
 
 ### 行为型模式
