@@ -22,17 +22,23 @@ package com.yadong.pattern.structural.bridge;
 public class TestBridge {
 
 
+    /**
+     * 抽象和实现分离,这是最重要的
+     * 场景:中国有很多银行,有农业银行和工商银行,有自己的账号,然后分为定期和活期,我们想一下,一块是银行,一块是账号
+     * 目的:以后银行会越来越多,希望用桥接模式去进行设计
+     */
     public static void test() {
+        //工商银行,然后账号类型是 定期
         Bank icbcBank = new ICBCBank(new DepositAccount());
         Account icbcAccount = icbcBank.openAccount();
         icbcAccount.showAccountType();
 
-
+        //工商银行,然后账号类型是 活期
         Bank icbcBank2 = new ICBCBank(new SavingAccount());
         Account icbcAccount2 = icbcBank2.openAccount();
         icbcAccount2.showAccountType();
 
-
+        //农业银行,然后账号类型是 活期
         Bank abcBank = new ABCBank(new SavingAccount());
         Account abcAccount = abcBank.openAccount();
         abcAccount.showAccountType();
