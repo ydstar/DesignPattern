@@ -19,7 +19,7 @@ package com.yadong.pattern.structural.bridge;
  *      1.增加了系统的理解和设计难度
  *      2.需要正确的识别出系统中两个独立变化的维度
  */
-public class BridgeTest {
+public class TestBridge {
 
 
     public static void test() {

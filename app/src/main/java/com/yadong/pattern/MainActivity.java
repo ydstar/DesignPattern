@@ -7,7 +7,7 @@ import android.view.View;
 import com.yadong.pattern.behavioral.template_method.TestTemplateMethod;
 import com.yadong.pattern.creational.builder.TestBuilder;
 import com.yadong.pattern.structural.adapter.TestAdapter;
-import com.yadong.pattern.structural.bridge.BridgeTest;
+import com.yadong.pattern.structural.bridge.TestBridge;
 import com.yadong.pattern.structural.composite.TestComposite;
 import com.yadong.pattern.structural.decorator.DecoratorTest;
 import com.yadong.pattern.structural.facade.TestFacade;
@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
      * 桥接模式
      */
     public void method12() {
-        BridgeTest.test();
+        TestBridge.test();
     }
 
     /**
