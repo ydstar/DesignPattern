@@ -16,7 +16,7 @@ import com.yadong.pattern.creational.factory_method.TestFactoryMethod;
 import com.yadong.pattern.creational.factory_simple.TestFactorySimple;
 import com.yadong.pattern.behavioral.observer.ObserverTest;
 import com.yadong.pattern.creational.prototype.TestPrototype;
-import com.yadong.pattern.structural.flyweight.FlyweightTest;
+import com.yadong.pattern.structural.flyweight.TestFlyweight;
 import com.yadong.pattern.structural.proxy.ProxyTest;
 import com.yadong.pattern.creational.single.TestSingleton;
 import com.yadong.pattern.behavioral.strategy.StrategyTest;
@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
      * 享元模式
      */
     public void method10() {
-        FlyweightTest.test();
+        TestFlyweight.test();
     }
 
     /**

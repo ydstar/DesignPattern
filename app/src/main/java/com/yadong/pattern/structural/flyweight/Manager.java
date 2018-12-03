@@ -25,6 +25,4 @@ public class Manager implements Employee {
         this.reportContent = reportContent;
     }
 
-
-
 }
