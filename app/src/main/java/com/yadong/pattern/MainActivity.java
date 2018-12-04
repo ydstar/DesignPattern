@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.yadong.pattern.behavioral.iterator.TestIterator;
 import com.yadong.pattern.behavioral.template_method.TestTemplateMethod;
 import com.yadong.pattern.creational.builder.TestBuilder;
 import com.yadong.pattern.structural.adapter.TestAdapter;
@@ -79,7 +80,8 @@ public class MainActivity extends AppCompatActivity {
 //        method11();
 //        method12();
 //        method13();
-        method14();
+//        method14();
+        method15();
     }
 
     /*******************创建型模式***********************************************/
@@ -187,10 +189,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 迭代器模式
+     * 迭代器模
      */
     public void method15() {
-
+        TestIterator.test();
     }
 
     /**
