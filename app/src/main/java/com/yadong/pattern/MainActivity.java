@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.yadong.pattern.behavioral.interpreter.TestInterpreter;
 import com.yadong.pattern.behavioral.iterator.TestIterator;
+import com.yadong.pattern.behavioral.memento.TestMemento;
 import com.yadong.pattern.behavioral.template_method.TestTemplateMethod;
 import com.yadong.pattern.creational.builder.TestBuilder;
 import com.yadong.pattern.structural.adapter.TestAdapter;
@@ -206,7 +208,7 @@ public class MainActivity extends AppCompatActivity {
      * 解释器模式
      */
     public void method17() {
-
+        TestInterpreter.test();
     }
 
     /**
