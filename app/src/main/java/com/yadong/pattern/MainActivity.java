@@ -222,7 +222,7 @@ public class MainActivity extends AppCompatActivity {
      * 备忘录模式
      */
     public void method19() {
-
+        TestMemento.test();
     }
 
     /**
