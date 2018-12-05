@@ -18,7 +18,7 @@ package com.yadong.pattern.behavioral.memento;
 public class TestMemento {
 
     /**
-     * 学习的时候回记录自己的思路,然后会记下来,如果想修改,可以恢复到之前保存的状态
+     * 学习的时候会记录自己的思路,然后会记下来,如果想修改,可以恢复到之前保存的状态
      */
     public static void test() {
         ArticleMementoManager articleMementoManager = new ArticleMementoManager();

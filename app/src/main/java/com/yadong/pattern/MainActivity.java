@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.yadong.pattern.behavioral.command.TestCommand;
 import com.yadong.pattern.behavioral.interpreter.TestInterpreter;
 import com.yadong.pattern.behavioral.iterator.TestIterator;
 import com.yadong.pattern.behavioral.memento.TestMemento;
@@ -83,7 +84,12 @@ public class MainActivity extends AppCompatActivity {
 //        method12();
 //        method13();
 //        method14();
-        method15();
+//        method15();
+//        method16();
+//        method17();
+//        method18();
+//        method19();
+        method20();
     }
 
     /*******************创建型模式***********************************************/
@@ -229,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
      * 命令模式
      */
     public void method20() {
-
+        TestCommand.test();
     }
 
     /**
