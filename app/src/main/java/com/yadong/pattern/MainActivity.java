@@ -7,6 +7,7 @@ import android.view.View;
 import com.yadong.pattern.behavioral.command.TestCommand;
 import com.yadong.pattern.behavioral.interpreter.TestInterpreter;
 import com.yadong.pattern.behavioral.iterator.TestIterator;
+import com.yadong.pattern.behavioral.mediator.TestMediator;
 import com.yadong.pattern.behavioral.memento.TestMemento;
 import com.yadong.pattern.behavioral.template_method.TestTemplateMethod;
 import com.yadong.pattern.creational.builder.TestBuilder;
@@ -89,7 +90,8 @@ public class MainActivity extends AppCompatActivity {
 //        method17();
 //        method18();
 //        method19();
-        method20();
+//        method20();
+        method21();
     }
 
     /*******************创建型模式***********************************************/
@@ -242,7 +244,7 @@ public class MainActivity extends AppCompatActivity {
      * 中介者模式
      */
     public void method21() {
-
+        TestMediator.test();
     }
 
     /**
