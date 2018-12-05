@@ -32,8 +32,4 @@ public abstract class ACourse {
     //包装课程
     abstract void packageCourse();
 
-
-
-
-
 }

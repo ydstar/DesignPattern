@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 迭代器模
+     * 迭代器模式
      */
     public void method15() {
         TestIterator.test();
