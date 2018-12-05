@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.yadong.pattern.behavioral.chain_of_responsibility.TestChainOfResponsibility;
 import com.yadong.pattern.behavioral.command.TestCommand;
 import com.yadong.pattern.behavioral.interpreter.TestInterpreter;
 import com.yadong.pattern.behavioral.iterator.TestIterator;
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         //        method5();
         //        method6();
         //        method7();
-//        method8();\
+//        method8();
 //        method9();
 //        method10();
 //        method11();
@@ -91,7 +92,8 @@ public class MainActivity extends AppCompatActivity {
 //        method18();
 //        method19();
 //        method20();
-        method21();
+//        method21();
+        method22();
     }
 
     /*******************创建型模式***********************************************/
@@ -251,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
      * 责任链模式
      */
     public void method22() {
-
+        TestChainOfResponsibility.test();
     }
 
     /**
