@@ -1,7 +1,7 @@
 package com.yadong.pattern.behavioral.state;
 
 /**
- *
+ * 暂停状态
  */
 public class PauseState extends CourseVideoState {
 

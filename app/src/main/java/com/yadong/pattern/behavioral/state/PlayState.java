@@ -1,7 +1,7 @@
 package com.yadong.pattern.behavioral.state;
 
 /**
- *
+ * 播放状态
  */
 public class PlayState extends CourseVideoState {
 

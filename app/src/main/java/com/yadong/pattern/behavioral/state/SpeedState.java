@@ -1,7 +1,7 @@
 package com.yadong.pattern.behavioral.state;
 
 /**
- *
+ * 快进状态
  */
 public class SpeedState extends CourseVideoState {
     @Override

@@ -1,7 +1,7 @@
 package com.yadong.pattern.behavioral.state;
 
 /**
- *
+ * 课程视频状态  抽象类
  */
 public abstract class CourseVideoState {
     protected CourseVideoContext courseVideoContext;
