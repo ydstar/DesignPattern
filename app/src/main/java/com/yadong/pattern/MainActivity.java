@@ -10,6 +10,7 @@ import com.yadong.pattern.behavioral.interpreter.TestInterpreter;
 import com.yadong.pattern.behavioral.iterator.TestIterator;
 import com.yadong.pattern.behavioral.mediator.TestMediator;
 import com.yadong.pattern.behavioral.memento.TestMemento;
+import com.yadong.pattern.behavioral.state.TestState;
 import com.yadong.pattern.behavioral.template_method.TestTemplateMethod;
 import com.yadong.pattern.behavioral.visitor.TestVisitor;
 import com.yadong.pattern.creational.builder.TestBuilder;
@@ -269,7 +270,7 @@ public class MainActivity extends AppCompatActivity {
      * 状态模式
      */
     public void method24() {
-
+        TestState.test();
     }
 
 
