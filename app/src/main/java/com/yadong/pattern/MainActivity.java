@@ -96,7 +96,8 @@ public class MainActivity extends AppCompatActivity {
 //        method20();
 //        method21();
 //        method22();
-        method23();
+//        method23();
+        method24();
     }
 
     /*******************创建型模式***********************************************/
