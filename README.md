@@ -33,31 +33,31 @@
     >为另一个对象提供一个对象或占位符以控制对这个对象的访问
 
 ### 行为型模式
-* 模板方法模式(template)
+* [模板方法模式(template)](https://www.jianshu.com/p/380a437f7303)
     >在一个方法内定义一个算法的骨架,具体算法步骤有由子类实现,
     例如:数组的 sort方法
-* 迭代器模式(Iterator pattern)
+* [迭代器模式(Iterator pattern)](https://www.jianshu.com/p/0ad3521cc4fa)
     >提供统一的方法顺序访问聚合对象的每个元素,而又不暴露内部细节;
-* 策略模式(strategy pattern)
+* [策略模式(strategy pattern)](https://www.jianshu.com/p/cdfe4c5041af)
     > 定义算法族,分别封装,各算法间可相互替换,一般由调用算法族的类组合算法
     与状态模式类似,都可以动态改变行为(算法)区别在于状态模式由状态类控制行为的改变
-* 解释器模式(interpreter)
+* [解释器模式(interpreter)](https://www.jianshu.com/p/be983cc8706b)
     >用于解析语法树
-* 观察者模式(Observer)
-* 备忘录模式(memento)
+* [观察者模式(Observer)](https://www.jianshu.com/p/f1a93aec7068)
+* [备忘录模式(memento)](https://www.jianshu.com/p/9e853a4c4905)
     >存储一个对象的内部状态,用于恢复;
     发起人:记录当前内部状态;定义备份的范围,负责创建和恢复数据;
     备忘录:负责存储状态;
     管理者:对备忘录进行管理
-* 命令模式(command)
-* 中介者模式(mediator)
+* [命令模式(command)](https://www.jianshu.com/p/6fc9f869a935)
+* [中介者模式(mediator)](https://www.jianshu.com/p/54989f21022e)
     >用一个中介对象（中介者）来封装一系列的对象交互，中介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互
-* 责任链模式(Chain of Responsibility)
+* [责任链模式(Chain of Responsibility)](https://www.jianshu.com/p/3f0a7835dbe9)
     >很多对象由每一个对象对其下家的引用而连接起来形成一条链
     例如:对申请审批的流转,权限不足向上流转直达有满足权限的人处理
-* 访问者模式(visitor)
+* [访问者模式(visitor)](https://www.jianshu.com/p/33b8cdc608fb)
     >(方法重载)根据访问者的不同执行不同的方法
-* 状态模式(Pattern of Objects for States）
+* [状态模式(Pattern of Objects for States）](https://www.jianshu.com/p/7dfe1e21ebd6)
     >允许对象在内部状态改变是改变他的行为;行为的改变一般由状态类控制
 
 
