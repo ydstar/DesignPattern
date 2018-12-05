@@ -11,6 +11,7 @@ import com.yadong.pattern.behavioral.iterator.TestIterator;
 import com.yadong.pattern.behavioral.mediator.TestMediator;
 import com.yadong.pattern.behavioral.memento.TestMemento;
 import com.yadong.pattern.behavioral.template_method.TestTemplateMethod;
+import com.yadong.pattern.behavioral.visitor.TestVisitor;
 import com.yadong.pattern.creational.builder.TestBuilder;
 import com.yadong.pattern.structural.adapter.TestAdapter;
 import com.yadong.pattern.structural.bridge.TestBridge;
@@ -93,7 +94,8 @@ public class MainActivity extends AppCompatActivity {
 //        method19();
 //        method20();
 //        method21();
-        method22();
+//        method22();
+        method23();
     }
 
     /*******************创建型模式***********************************************/
@@ -260,7 +262,7 @@ public class MainActivity extends AppCompatActivity {
      * 访问者模式
      */
     public void method23() {
-
+        TestVisitor.test();
     }
 
     /**
