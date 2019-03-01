@@ -267,7 +267,6 @@ public class MainActivity extends AppCompatActivity {
         TestVisitor.test();
     }
 
-
     /**
      * 状态模式
      */
