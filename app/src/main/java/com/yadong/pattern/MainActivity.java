@@ -29,6 +29,8 @@ import com.yadong.pattern.structural.proxy.ProxyTest;
 import com.yadong.pattern.creational.single.TestSingleton;
 import com.yadong.pattern.behavioral.strategy.StrategyTest;
 
+import java.util.ArrayList;
+
 /**
  * 设计模式大全
  * <p>
@@ -274,6 +276,11 @@ public class MainActivity extends AppCompatActivity {
      */
     public void method24() {
         TestState.test();
+    }
+
+    public void  show(){
+
+
     }
 
 
