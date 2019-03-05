@@ -116,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
     public void method2() {
         TestFactoryMethod.test();
     }
+    
 
     /**
      * 抽象工厂
